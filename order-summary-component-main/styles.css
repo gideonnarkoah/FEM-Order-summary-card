@@ -1,0 +1,137 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./images/pattern-background-desktop.svg);
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+main {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  text-align: center;
+}
+
+.img-section {
+  width: 100%;
+}
+
+.illustration-hero {
+  width: inherit;
+  height: inherit;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  object-fit: cover;
+  /* overflow: hidden; */
+}
+.text-section {
+  padding: 1.8rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+}
+
+h2 {
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 1.2rem;
+}
+
+p {
+  color: hsl(224, 23%, 55%);
+}
+
+p.description {
+  margin-bottom: 1.5rem;
+}
+
+.pricing {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(225, 100%, 98%);
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.pricing-flex {
+  display: flex;
+  gap: 10px;
+}
+
+.pricing-flex__figures {
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-flex__figures {
+  color: hsl(224, 23%, 55%);
+}
+
+.pricing .underline {
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  margin: auto 0;
+}
+
+.btn {
+  background-color: hsl(245, 75%, 52%);
+  font-family: inherit;
+  padding: 1rem;
+  border-radius: 10px;
+  color: hsl(225, 100%, 98%);
+  box-shadow: 0 7px 10px hsl(225, 100%, 94%);
+  border: none;
+  font-weight: 500;
+}
+
+.order {
+  margin-top: 1rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.pricing .underline:hover,
+.btn:hover,
+.order:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: bold;
+}
+
+.attribution a:hover {
+  color: hsl(245, 75%, 52%);
+}
+
+@media (max-width: 375px) {
+  body {
+    background: url(./images/pattern-background-mobile.svg);
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
